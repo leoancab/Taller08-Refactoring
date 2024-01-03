@@ -32,9 +32,9 @@ public class SistemaAtencionMedico {
         paciente.historialMedico.setConsulta(consulta); //Hacer esto es incorrecto
     }
 
-    public double calcularValorFinalConsulta(Consulta  consulta){
+    public double calcularValorFinalConsulta(Consulta  consulta, Paciente paciente){
         double valorARestar = 0;
-        if(edadPaciente>=65){
+        if(paciente.esMayorEdad()){
             valorARestar = costoConsulta*0.25; //0.25 es el descuento para adultos mayores
         }
         return costoConsulta-valorARestar;
