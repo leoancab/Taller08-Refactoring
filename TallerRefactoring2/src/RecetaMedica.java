@@ -42,11 +42,13 @@ public class RecetaMedica {
         this.medico = medico;
     }
 
-    public List<String> getMedicamentos() {
-        return medicamentos;
+    public void getMedicamentos() {
+        for(String medicamento: this.medicamentos){
+        return System.out.println(medicamento);
+        }
     }
 
-    public void setMedicamentos(List<String> medicamentos) {
-        this.medicamentos = medicamentos;
+    public void setMedicamentos(String medicamento) {
+        this.medicamentos.add(medicamento);
     }
 }

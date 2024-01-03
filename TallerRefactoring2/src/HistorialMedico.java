@@ -24,11 +24,13 @@ public class HistorialMedico {
         this.consultas = consultas;
     }
 
-    public List<RecetaMedica> getRecetasMedicas() {
-        return recetasMedicas;
+    public void getMedicamentos() {
+        for(String medicamento: this.medicamentos){
+        return System.out.println(medicamento);
+        }
     }
 
-    public void setRecetasMedicas(List<RecetaMedica> recetasMedicas) {
-        this.recetasMedicas = recetasMedicas;
+    public void setMedicamentos(String medicamento) {
+        this.medicamentos.add(medicamento);
     }
 }
